@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Adaptation à la largeur de l'écran -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Landing Page - Emely Smith</title>
+
+    <!-- Bootstrap 5 : styles et grille responsive -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Notre propre feuille de style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= EN-TÊTE ================= -->
+    <header class="container-fluid px-3 px-md-5 py-3">
+
+        <!--
+            navbar : structure de navigation Bootstrap
+            navbar-expand-lg : menu complet sur desktop,
+            menu replié sur les écrans plus petits
+        -->
+        <nav class="navbar navbar-expand-lg">
+           <!-- Bouton du menu sur téléphone et tablette -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Ouvrir ou fermer le menu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Logo : renvoie vers l'accueil -->
+            <a href="#accueil" class="navbar-brand logo">
+                Design
+            </a>
+
+        
+
+            <!--
+                collapse : permet de masquer ou afficher le menu
+                navbar-collapse : applique le comportement Bootstrap
+            -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <!--
+                    ms-lg-auto : place le menu à droite sur desktop
+                    align-items-lg-center : aligne les liens
+                -->
+                <ul class="navbar-nav ms-lg-auto align-items-lg-center gap-lg-3 py-3 py-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accueil">
+                            Accueil
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">
+                            Services
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apropos">
+                            Qui nous sommes ?
+                        </a>
+                    </li>
+
+                    <li class="nav-item mt-2 mt-lg-0">
+                        <a class="btn btn-dark px-4" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= CONTENU PRINCIPAL ================= -->
+    <main>
+
+        <section class="home container-fluid px-3 px-md-5" id="accueil">
+
+            <!-- Présentation et titre -->
+            <div class="hero-text text-center">
+
+                <h4 class="photographer-name">
+                    Emely Smith
+                </h4>
+
+                <h1 class="hero-title">
+                    Capturing the beauty
+                    <br class="d-none d-sm-block">
+                    of your journey
+                </h1>
+
+            </div>
+
+
+            <!-- ================= GALERIE ================= -->
+            <!--
+                row : crée une ligne Bootstrap
+                g-3 : ajoute un espace entre les colonnes
+            -->
+            <div class="row g-3 g-md-4 images">
+
+                <!-- Téléphone : 2 images par ligne
+                     Tablette : 2 images par ligne
+                     Desktop : 4 images par ligne -->
+                <div class="col-6 col-md-6 col-lg-3">
+                    <img
+                        src="images/img1.jpg"
+                        alt="Photographie de voyage 1"
+                        class="img-fluid gallery-image"
+                    >
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-3">
+                    <img
+                        src="images/img2.jpg"
+                        alt="Photographie de voyage 2"
+                        class="img-fluid gallery-image"
+                    >
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-3">
+                    <img
+                        src="images/img3.jpg"
+                        alt="Photographie de voyage 3"
+                        class="img-fluid gallery-image"
+                    >
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-3">
+                    <img
+                        src="images/img4.jpg"
+                        alt="Photographie de voyage 4"
+                        class="img-fluid gallery-image"
+                    >
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Bootstrap JavaScript : nécessaire au menu mobile -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
