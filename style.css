@@ -1,230 +1,33 @@
-
-/* ================== POLICES ================== */
-@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
-/* ================== RÉINITIALISATION ================== */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    min-height: 100vh;
-    background-color: hwb(46 69% 4%);
-    padding: 12px;
-}
-
-/* ================== EN-TÊTE ================== */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-}
-
-/* ================== LOGO ================== */
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-.logo {
-    font-weight: bold;
-    font-size: 25px;
-    color: #a05006;
-}
-
-/* ================== MENU FIXÉ EN BAS À DROITE ================== */
-.menu {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    z-index: 1000;
-
-    background-color: #fffaf0;
-    padding: 15px 22px;
-    border-radius: 40px;
-    box-shadow: 0 5px 20px rgba(97, 37, 2, 0.18);
-}
-
-.menu ul {
-    display: flex;
-    gap: 25px;
-    list-style: none;
-    align-items: center;
-}
-
-.menu a {
-    color: #8f4e04;
-    font-size: 14px;
-    white-space: nowrap;
-    transition: color 0.3s ease;
-}
-
-.menu a:hover {
-    color: #9b6605;
-}
-
-/* ================== BOUTON CONTACT ================== */
-.btn {
-    display: inline-block;
-    padding: 8px 20px;
-    font-size: 14px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    background-color: #8f4e04;
-    color: #f1e9e1 !important;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #ac5f07;
-}
-
-/* ================== SECTION D'ACCUEIL ================== */
-.home {
-    display: flex;
-    align-items: center;
+body{
+    font-family: Arial;
     text-align: center;
-    flex-direction: column;
-    margin-top: 20px;
-    padding: 20px 0 80px;
+    padding: 20px;
 }
-
-.home h4 {
-    font-family: "Monsieur La Doulaise", cursive;
-    font-size: clamp(42px, 6vw, 72px);
-    color: hsl(17, 97%, 23%);
-    font-weight: 400;
+textarea{
+    width: 300px;
+    height: 100px;
+    margin-bottom: 10px;
 }
-
-.home h1 {
-    font-size: clamp(30px, 5.5vw, 72px);
-    color: #612502;
-    line-height: 1.1;
-    font-weight: 600;
-}
-
-/* ================== GALERIE D'IMAGES ================== */
-.images {
-    width: 100%;
-    max-width: 1400px;
-    margin-top: 50px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.images img {
-    width: calc(25% - 15px);
-    height: 260px;
-    object-fit: cover;
-    border-radius: 20px;
-    transition: transform 0.4s ease, filter 0.4s ease;
-}
-
-/* Effet au survol sans déformer la mise en page */
-.images img:hover {
-    transform: translateY(-5px);
-    filter: contrast(1.1);
+.btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
-
-/* ================== TABLETTES ================== */
-@media (max-width: 991px) {
-    header {
-        padding: 10px;
-    }
-
-    .images {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .images img {
-        width: calc(50% - 10px);
-        height: 240px;
-    }
-
-    .menu {
-        right: 15px;
-        bottom: 15px;
-    }
-
-    .menu ul {
-        gap: 15px;
-    }
+.btn:hover{
+    background-color: blue;
+    transform: scale(1.05);
 }
-
-/* ================== TÉLÉPHONES ================== */
-@media (max-width: 576px) {
-    body {
-        padding: 10px;
-    }
-
-    header {
-        padding: 10px 5px;
-    }
-
-    .logo {
-        font-size: 22px;
-    }
-
-    .home {
-        margin-top: 30px;
-        padding-bottom: 100px;
-    }
-
-    .home h4 {
-        font-size: 45px;
-    }
-
-    .home h1 {
-        font-size: clamp(28px, 7.5vw, 40px);
-        line-height: 1.2;
-    }
-
-    .images {
-        margin-top: 30px;
-        gap: 10px;
-    }
-
-    .images img {
-        width: calc(50% - 5px);
-        height: 180px;
-        border-radius: 12px;
-    }
-
-    /* Menu compact pour ne pas masquer toute la page */
-    .menu {
-        left: 10px;
-        right: 10px;
-        bottom: 10px;
-        padding: 12px 8px;
-        border-radius: 18px;
-    }
-
-    .menu ul {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px 14px;
-    }
-
-    .menu a {
-        font-size: 11px;
-    }
-
-    .menu .btn {
-        padding: 7px 12px;
-        font-size: 11px;
-    }
+.btn:active{
+    transform: scale(0.95);
+}
+#buttom{
+    margin-top: 10px;
+}
+#result{
+    margin-top: 10px;
+    font-weight: bold;
 }
