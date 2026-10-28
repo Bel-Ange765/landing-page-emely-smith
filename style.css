@@ -1,0 +1,33 @@
+body{
+    font-family: Arial;
+    text-align: center;
+    padding: 20px;
+}
+textarea{
+    width: 300px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: blue;
+    transform: scale(1.05);
+}
+.btn:active{
+    transform: scale(0.95);
+}
+#buttom{
+    margin-top: 10px;
+}
+#result{
+    margin-top: 10px;
+    font-weight: bold;
+}
